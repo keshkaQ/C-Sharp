@@ -13,5 +13,7 @@
 
 //        operation = (x, y) => x * y;
 //        Console.WriteLine($"Умножение: 2 * 5 = {operation.Invoke(2, 5)}");
+
+
 //    }
 //}
