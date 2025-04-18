@@ -5,11 +5,11 @@
 //    public event MidpointDelegate onMidpoint;
 //    public void Count(int start, int end)
 //    {
-//        for(int i = start; i <= end; i++)
+//        for (int i = start; i <= end; i++)
 //        {
-//            if(i == start+(end-start)/2)
+//            if (i == start + (end - start) / 2)
 //            {
-//                if(onMidpoint != null)
+//                if (onMidpoint != null)
 //                    onMidpoint.Invoke(i);
 //            }
 //            Console.Write("\n");
@@ -26,7 +26,7 @@
 //    }
 //}
 
-//class Program
+//partial class Program
 //{
 //    public static void WriteMidpoint(int n)
 //    {
