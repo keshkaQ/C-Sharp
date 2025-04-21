@@ -1,57 +1,57 @@
-﻿using C_.HomeWork._9_10;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using c_.homework._9_10;
+//using system;
+//using system.collections.generic;
+//using system.linq;
+//using system.text;
+//using system.threading.tasks;
 
-namespace C_.HomeWork._7_8;
+//namespace c_.homework._7_8;
 
-public class Album
-{
-    public string Title { get; }
-    public string Artist { get; }
-    public string Genre { get; }
-    public int ReleaseYear { get; }
+//public class album
+//{
+//    public string title { get; }
+//    public string artist { get; }
+//    public string genre { get; }
+//    public int releaseyear { get; }
 
-    public Album(string title, string artist, string genre, int releaseYear)
-    {
-        ValidationHelper.ValidateNotNullOrWhiteSpace(title, nameof(title));
-        ValidationHelper.ValidateNotNullOrWhiteSpace(artist, nameof(artist));
-        ValidationHelper.ValidateNotNullOrWhiteSpace(genre, nameof(genre));
+//    public album(string title, string artist, string genre, int releaseyear)
+//    {
+//        validationhelper.validatenotnullorwhitespace(title, nameof(title));
+//        validationhelper.validatenotnullorwhitespace(artist, nameof(artist));
+//        validationhelper.validatenotnullorwhitespace(genre, nameof(genre));
 
-        Title = title;
-        Artist = artist;
-        Genre = genre;
-        ReleaseYear = releaseYear;
-    }
+//        title = title;
+//        artist = artist;
+//        genre = genre;
+//        releaseyear = releaseyear;
+//    }
 
-    public override string ToString()
-    {
-        return $"Информация об альбоме: {Title} - {Artist} ({Genre}, {ReleaseYear})";
-    }
+//    public override string tostring()
+//    {
+//        return $"информация об альбоме: {title} - {artist} ({genre}, {releaseyear})";
+//    }
 
-    public static bool operator ==(Album album1, Album album2)
-    {
+//    public static bool operator ==(album album1, album album2)
+//    {
 
-        return album1.Title == album2.Title && album1.ReleaseYear == album2.ReleaseYear;
-    }
+//        return album1.title == album2.title && album1.releaseyear == album2.releaseyear;
+//    }
 
-    public static bool operator !=(Album album1, Album album2)
-    {
-        return !(album1 == album2);
-    }
-    public override bool Equals(object obj)
-    {
-        if (obj is Album otherAlbum)
-        {
-            return this == otherAlbum;
-        }
-        return false;
-    }
+//    public static bool operator !=(album album1, album album2)
+//    {
+//        return !(album1 == album2);
+//    }
+//    public override bool equals(object obj)
+//    {
+//        if (obj is album otheralbum)
+//        {
+//            return this == otheralbum;
+//        }
+//        return false;
+//    }
 
-    public override int GetHashCode()
-    {
-        return HashCode.Combine(Title, ReleaseYear);
-    }
-}
+//    public override int gethashcode()
+//    {
+//        return hashcode.combine(title, releaseyear);
+//    }
+//}

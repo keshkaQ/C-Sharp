@@ -5,6 +5,7 @@
 //{
 //    static void Main()
 //    {
+
 //        var fitnessCenter = new FitnessCenter();
 //        var client1 = new Client
 //            ("Ivan", "Ivanov",
