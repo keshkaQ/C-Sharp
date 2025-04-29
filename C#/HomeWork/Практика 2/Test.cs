@@ -1,13 +1,10 @@
 ﻿
-
 //using System.Collections.Generic;
-
 //var person = new Person
 //{
 //    FirstName = "Test",
 //    LastName = "test"
 //};
-
 //person.PrintInfo();
 
 //var client = new Client
@@ -37,7 +34,7 @@
 //    public string FirstName { get; set; }
 //    public string LastName { get; set; }
 
-//    public virtual void PrintInfo()
+//    public void PrintInfo()
 //    {
 //        Console.WriteLine($"FirstName: {FirstName}, LastName: {LastName}");
 //    }
