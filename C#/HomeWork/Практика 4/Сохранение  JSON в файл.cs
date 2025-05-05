@@ -13,14 +13,15 @@
 //try
 //{
 //    var options = new JsonSerializerOptions
-//    { 
+//    {
 //        WriteIndented = true,
 //        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
 //    };
-//    string booksToJson = JsonSerializer.Serialize(books, options);
+//    string booksToJson = string.Empty;
 
 //    try
 //    {
+//        booksToJson = JsonSerializer.Serialize(books, options);
 //        using (var streamWriter = new StreamWriter(path))
 //        {
 //            streamWriter.Write(booksToJson);

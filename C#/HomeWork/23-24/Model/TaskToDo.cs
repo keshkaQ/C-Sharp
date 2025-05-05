@@ -7,14 +7,7 @@ public class TaskToDo
     // required - обязательность заполнения свойства
     public required string Description { get; set; }
     public bool IsComplete { get; private set; }
-    public TaskToDo(string title, string description)
-    {
-        Title = title; Description = description;
-    }
-    public TaskToDo()
-    {
-
-    }
+    
 
     public void ChangeComplete()
     {
@@ -22,12 +15,12 @@ public class TaskToDo
     }
     public override string ToString()
     {
-        return $"Title{Title}, Description: {Description}, Status {GetTextComplete()}";
+        return $"Title {Title}, Description: {Description}, Status {GetTextComplete()}";
     }
-    private string GetTextComplete()
+    public string GetTextComplete()
     {
         if (IsComplete)
             return "Завершена";
-        else return "Активна";
+        return "Активна";
     }
 }

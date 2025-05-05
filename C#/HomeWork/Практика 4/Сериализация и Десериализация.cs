@@ -4,7 +4,7 @@
 //{
 //    Name = "Kirill",
 //    Age = 22,
-//    Grades = new List<int> { 4, 5, 5, 4 }
+//    Grades = { 4, 5, 5, 4 }
 //};
 
 //var studentToJson = string.Empty;
@@ -33,5 +33,3 @@
 //{
 //    Console.WriteLine($"Ошибка десериализации: {ex.Message}");
 //}
-
-

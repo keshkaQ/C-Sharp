@@ -69,11 +69,11 @@
 //            Console.WriteLine("\n----------\nКопирование файла\n-----------");
 //            string targetDirectory = @"C:\Users\TitanPC\Desktop\Домашние задания академия топ";
 //            // Формирование пути для копии файла
-//            string targetFile = targetDirectory + "\\" + Path.GetFileName(path); // Формируем путь вручную
+//            string targetFile = $"{targetDirectory}\\{Path.GetFileName(path)}"; // Формируем путь вручную
 
 //            try
 //            {
-//                // Создание целевой директории, если она не существует
+//                // Создание директории, если она не существует
 //                if (!Directory.Exists(targetDirectory))
 //                {
 //                    Directory.CreateDirectory(targetDirectory);
@@ -99,8 +99,8 @@
 //                // Создание файла для теста перемещения
 //                File.WriteAllText(fileForMove, "Это файл для перемещения");
 
-//                // Формирование целевого пути
-//                string targetFile2 = targetDirectory + "\\" + Path.GetFileName(fileForMove); ;
+//                // Формирование пути
+//                string targetFile2 = $"{targetDirectory}\\{Path.GetFileName(fileForMove)}";
 //                // Перемещение файла с разрешением перезаписи
 //                File.Move(fileForMove, targetFile2, true);
 //                Console.WriteLine($"Файл перемещён в: {targetFile2}");
